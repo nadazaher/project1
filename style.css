@@ -1,0 +1,56 @@
+body {
+    font-family: 'Arvo', serif;
+}
+
+h1 {
+    font-family: 'Arvo', serif;
+    text-align: center;
+}
+
+#button {
+    background: teal;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    transition-duration: 0.5s;
+    margin-top: 5px;
+}
+#button:hover {
+    background: white;
+    border: 1px solid teal;
+    color: black;
+    cursor: pointer;
+}
+#after_submit {
+    visibility: hidden;
+    background: teal;
+    border-radius: 20px;
+    width: 400px;
+    padding: 10px 20px;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 auto; 
+    position: relative;
+    margin-top: 15px;
+
+}
+
+#quiz1 {
+    background: lightgrey;
+    padding: 10px 20px 10px 20px;
+    width: 400px;
+    border-radius: 20px;
+    float: block;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-top: 15px;
+
+}
+
+.questions {
+    font-family: 'Arvo', serif; 
+    font-size: 28px;
+
+}

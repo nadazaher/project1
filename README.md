@@ -8,7 +8,7 @@ This is a trivia game that checks how well the player knows me. I am choosing to
 
 ## Wireframe
 
-[]/images/lab/WhatsApp Image 2018-07-02 at 2.37.39 PM.jpeg
+[]/images/initial wireframses.jpeg
 
 ## Initial thoughts on game structure
 

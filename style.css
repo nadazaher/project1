@@ -7,17 +7,24 @@ h1 {
     text-align: center;
 }
 
-#button {
+h4 {
+    color: red;
+}
+#status {
+    font-family: 'Avro', serif;
+    font-size: 20px;
+    float: right;
+}
+.button {
     background: teal;
     border: none;
     border-radius: 5px;
     padding: 10px;
     color: white;
     font-size: 16px;
-    transition-duration: 0.5s;
     margin-top: 5px;
 }
-#button:hover {
+.button:hover {
     background: white;
     border: 1px solid teal;
     color: black;
@@ -27,30 +34,109 @@ h1 {
     visibility: hidden;
     background: teal;
     border-radius: 20px;
-    width: 400px;
-    padding: 10px 20px;
+    width: 500px;
+    height: 270px;
+    padding: 20px 20px;
     font-size: 30px;
     text-align: center;
     margin: 0 auto; 
     position: relative;
-    margin-top: 15px;
+    margin-top: 30px;
 
 }
 
 #quiz1 {
     background: lightgrey;
     padding: 10px 20px 10px 20px;
-    width: 400px;
+    width: 500px;
+    height: 270px;
     border-radius: 20px;
     float: block;
     font-size: 20px;
     margin: 0 auto;
     margin-top: 15px;
+    display: none;
 
 }
+
+#quiz2 {
+    background: lightgrey;
+    padding: 10px 20px 10px 20px;
+    width: 500px;
+    height: 270px;
+    border-radius: 20px;
+    float: block;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-top: 15px;
+    display: none;
+
+}
+#quiz3 {
+    background: lightgrey;
+    padding: 10px 20px 10px 20px;
+    width: 500px;
+    height: 270px;
+    border-radius: 20px;
+    float: block;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-top: 15px;
+    display: none;
+
+}
+
 
 .questions {
     font-family: 'Arvo', serif; 
     font-size: 28px;
 
+}
+
+.intro {
+    font-family: 'Arvo', serif; 
+    font-size: 20px;
+    text-align: center;
+}
+
+#start {
+background: teal;
+border: none;
+border-radius: 5px;
+padding: 10px;
+color: white;
+font-size: 40px;
+margin-top: 5px;
+margin: 0 auto;
+width: 200px;
+height: 100px;
+display: block;
+}
+
+#buttonCA {
+float: left;
+}
+
+#buttonNQ {
+float: right;
+
+}
+
+#myProgress {
+    width: 70%;
+    background-color: grey;
+    text-align: center;
+    margin: 0 auto;
+
+}
+#myBar {
+    width: 1%;
+    height: 30px;
+    background-color: green;
+    text-align: center; 
+    color: white; 
+}
+
+.extra {
+    display:none;
 }

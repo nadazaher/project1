@@ -7,20 +7,50 @@
     <script src= "script.js" type = "text/javascript"></script>
 </head>
 <body>
-    <h1>Do you know Nada or ¿tu sabes nada?</h1>
-    <hr />
+    <h1 class = "title">Do you know Nada or ¿tu sabes nada?</h1>
+    <hr class = "line" />
 
-    <form id = "quiz1" name = "question1">
-        <p class = "questions">What is Nada's hometown?</p>
-        <input type = "radio" id ="mc" name = "Q1" value = "Cairo"> A) Cairo, Egypt<br>  
-        <input type = "radio" id ="mc" name = "Q1" value = "Alexandria"> B) Alexandria, Egypt<br>  
-        <input type = "radio" id ="mc" name = "Q1" value = "NYC"> C) New York City<br>  
-        <input type = "radio" id ="mc" name = "Q1" value = "Lebanon"> D) Beirut, Lebanon<br>    
+    <p class = "intro"> Welcome to my 10 question quiz and the real test to how well you know me. <br> So you're either a true friend or you know 'nada' <br> Ready to find out?</p>
+<input type = "button" class="start" id = "start" value = "START" onclick = "start(); titleClear();">
+
+<div class = extra>
+
+        <div id="myProgress">
+                <div id="myBar">10%</div>
+              </div>
+
+        <script>
+                function countDown(secs,elem) {
+                    var element = document.getElementById(elem);
+                    element.innerHTML = +secs+" secs";
+                    if(secs < 1) {
+                        clearTimeout(timer);
+                        element.innerHTML = '<h4>Time Up!</h4>';
+                    }
+                    secs--;
+                    var timer = setTimeout('countDown('+secs+',"'+elem+'")',1000);
+                }
+                </script>
+                <div id="status"></div>
+                <script>countDown(10,"status");</script>
+</div>
         
-        <br><input type = "button" id = "button" value = "Next Question" onclick = "check();">
-      
+        <form id = "quiz" name = "quiz">
+        <p class = "questions">What is Nada's hometown?</p>
+        <input type = "radio" id ="mc1" name = "mc1" value = "answer1"> A) Cairo, Egypt<br>  
+        <input type = "radio" id ="mc2" name = "mc2" value = "answer2"> B) Alexandria, Egypt<br>  
+        <input type = "radio" id ="mc3" name = "mc3" value = "answer3"> C) New York City<br>  
+        <input type = "radio" id ="mc4" name = "mc4" value = "correct1"> D) Beirut, Lebanon<br>    
+        
+        <br><input type = "button" id = "buttonCA" class = "button" value = "Check Answer"  onclick= "check1();" >
+        <input type = "button" id = "buttonNQ" class = "button" value = "Next Question"  onclick= "start2();" >
 
     </form>
+
+    <!-- Use only one form and input with changable variables -->
+    <!-- math.random(4) to randomize the order of MCs -->
+    <!-- dont call functions from here? -->
+
 
     <div id = "after_submit">
             <p id = "message"></p>

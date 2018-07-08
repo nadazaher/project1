@@ -1,5 +1,14 @@
 body {
     font-family: 'Arvo', serif;
+    background: #DFFEFF;
+    color: #026D7F;
+}
+
+.line {
+   border-color: #026D7F;
+   background-color: #026D7F;
+   height: 2px;
+   
 }
 
 h1 {
@@ -16,7 +25,7 @@ h4 {
     float: right;
 }
 .button {
-    background: teal;
+    background: #0EB8B5;
     border: none;
     border-radius: 5px;
     padding: 10px;
@@ -26,13 +35,13 @@ h4 {
 }
 .button:hover {
     background: white;
-    border: 1px solid teal;
+    border: 1px solid #0EB8B5;
     color: black;
     cursor: pointer;
 }
 #after_submit {
     visibility: hidden;
-    background: teal;
+    background: #0EB8B5;
     border-radius: 20px;
     width: 500px;
     height: 270px;
@@ -45,7 +54,7 @@ h4 {
 
 }
 
-#quiz1 {
+#quiz {
     background: lightgrey;
     padding: 10px 20px 10px 20px;
     width: 500px;
@@ -86,12 +95,16 @@ h4 {
 
 }
 
-
+.answer {
+    text-overflow:ellipsis;
+    display: inline-block;
+}
 .questions {
     font-family: 'Arvo', serif; 
     font-size: 28px;
 
 }
+
 
 .intro {
     font-family: 'Arvo', serif; 
@@ -100,7 +113,7 @@ h4 {
 }
 
 #start {
-background: teal;
+background: #0EB8B5;
 border: none;
 border-radius: 5px;
 padding: 10px;

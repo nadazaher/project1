@@ -4,14 +4,13 @@
     <title>Nada's Quiz</title>
     <link href = "style.css" rel="stylesheet"> 
     <link href = "https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
-    <script src= "script.js" type = "text/javascript"></script>
 </head>
 <body>
     <h1 class = "title">Do you know Nada or ¿tu sabes nada?</h1>
     <hr class = "line" />
 
     <p class = "intro"> Welcome to my 10 question quiz and the real test to how well you know me. <br> So you're either a true friend or you know 'nada' <br> Ready to find out?</p>
-<input type = "button" class="start" id = "start" value = "START" onclick = "start(); titleClear();">
+<input type = "button" class="start" id = "start" value = "START" >
 
 <div class = extra>
 
@@ -35,15 +34,15 @@
                 <script>countDown(10,"status");</script>
 </div>
         
-        <form id = "quiz" name = "quiz">
-        <p class = "questions">What is Nada's hometown?</p>
-        <input type = "radio" id ="mc1" name = "mc1" value = "answer1"> A) Cairo, Egypt<br>  
-        <input type = "radio" id ="mc2" name = "mc2" value = "answer2"> B) Alexandria, Egypt<br>  
-        <input type = "radio" id ="mc3" name = "mc3" value = "answer3"> C) New York City<br>  
-        <input type = "radio" id ="mc4" name = "mc4" value = "correct1"> D) Beirut, Lebanon<br>    
+        <form id ="quiz" name = "quiz">
+        <p class ="questions"></p> 
+        <input type = "radio" class = "answer" > <p id="mcp1"></p>  
+        <input type = "radio" class = "answer" > <p id="mcp2"></p>
+        <input type = "radio" class = "answer" > <p id="mcp3"></p>
+        <input type = "radio" class = "answer" > <p id="mcp4"></p>
         
-        <br><input type = "button" id = "buttonCA" class = "button" value = "Check Answer"  onclick= "check1();" >
-        <input type = "button" id = "buttonNQ" class = "button" value = "Next Question"  onclick= "start2();" >
+        <br><input type = "button" id = "buttonCA" class = "button" value = "Check Answer" >
+        <input type = "button" id = "buttonNQ" class = "button" value = "Next Question" >
 
     </form>
 
@@ -51,12 +50,39 @@
     <!-- math.random(4) to randomize the order of MCs -->
     <!-- dont call functions from here? -->
 
+    <!-- <form id = "quiz2" name = "question2">
+            <p class = "questions">What sport did Nada play in college?</p>
+            <input type = "radio" id ="mc" name = "Q2" value = "Soccer"> A) Soccer<br>  
+            <input type = "radio" id ="mc" name = "Q2" value = "Volleyball"> B) Volleyball<br>  
+            <input type = "radio" id ="mc" name = "Q2" value = "Tennis"> C) Tennis<br>  
+            <input type = "radio" id ="mc" name = "Q2" value = "Squash"> D) Squash<br>    
+    
+            <br><input type = "button" id = "button" class = "buttonCA" value = "Check Answer"  onclick= "check2();" >
+            <input type = "button" id = "button" class = "buttonNQ" value = "Next Question"  onclick= "start3();" >
+            
+    
+        </form>
+    
+        <form id = "quiz3" name = "question3">
+            <p class = "questions">What is Nada's favorite cusine?</p>
+            <input type = "radio" id ="mc1" name = "Q3" value = "Japanese"> A) Japanese<br>  
+            <input type = "radio" id ="mc2" name = "Q3" value = "Indian"> B) Indian<br>  
+            <input type = "radio" id ="mc3" name = "Q3" value = "Lebanese"> C) Lebanese<br>  
+            <input type = "radio" id ="mc4" name = "Q3" value = "American"> D) American<br>    
+    
+            <br><input type = "button" id = "button" class = "buttonCA" value = "Check Answer"  onclick= "check3();" >
+            <input type = "button" id = "button" class = "buttonNQ" value = "Next Question"  onclick= "start4();" >
+            
+    
+        </form>
+     -->
+
 
     <div id = "after_submit">
             <p id = "message"></p>
             <p id = "score_tracker"></p> 
             </div>
     
-
+            <script defer src= "practice.js" type = "text/javascript"></script>
 </html>
 </body>

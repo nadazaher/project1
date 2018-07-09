@@ -18,11 +18,22 @@ h1 {
 
 h4 {
     color: red;
+    font-size: 40px;
+    font-family: 'Allerta Stencil', sans-serif;
+
+   
 }
 #status {
-    font-family: 'Avro', serif;
-    font-size: 20px;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 40px;
     float: right;
+    margin-top: 160px;
+    margin-right: 300px;
+    height: 170px;
+    width: 170px;
+
+
+
 }
 .button {
     background: #0EB8B5;
@@ -40,22 +51,21 @@ h4 {
     cursor: pointer;
 }
 #after_submit {
-    visibility: hidden;
+    display: none;
     background: #0EB8B5;
     border-radius: 20px;
-    width: 500px;
-    height: 270px;
+    width: 100px;
+    height: 100px;
     padding: 20px 20px;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     margin: 0 auto; 
-    position: relative;
-    margin-top: 30px;
+    font-family: 'Arvo', serif; 
+    
 
 }
 
 #quiz {
-    background: lightgrey;
     padding: 10px 20px 10px 20px;
     width: 500px;
     height: 270px;
@@ -67,37 +77,10 @@ h4 {
     display: none;
 
 }
-
-#quiz2 {
-    background: lightgrey;
-    padding: 10px 20px 10px 20px;
-    width: 500px;
-    height: 270px;
-    border-radius: 20px;
-    float: block;
-    font-size: 20px;
-    margin: 0 auto;
-    margin-top: 15px;
-    display: none;
-
-}
-#quiz3 {
-    background: lightgrey;
-    padding: 10px 20px 10px 20px;
-    width: 500px;
-    height: 270px;
-    border-radius: 20px;
-    float: block;
-    font-size: 20px;
-    margin: 0 auto;
-    margin-top: 15px;
-    display: none;
-
-}
-
 .answer {
     text-overflow:ellipsis;
     display: inline-block;
+    
 }
 .questions {
     font-family: 'Arvo', serif; 
@@ -130,25 +113,7 @@ display: block;
 float: left;
 }
 
-#buttonNQ {
-float: right;
 
-}
-
-#myProgress {
-    width: 70%;
-    background-color: grey;
-    text-align: center;
-    margin: 0 auto;
-
-}
-#myBar {
-    width: 1%;
-    height: 30px;
-    background-color: green;
-    text-align: center; 
-    color: white; 
-}
 
 .extra {
     display:none;

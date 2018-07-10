@@ -53,6 +53,8 @@ As a user, I want to play a fun trivia game that will test how well I know Nada 
 ## How to Use?
 Feel free to fork and clone my repo so you can access and play around with the code. If you just want to play the actual game you can play it here https://nadazaher.github.io/project1/
 
+Here is the screen recording explaining the game and the code - https://vimeo.com/279290894
+
 ## Unsolved Problems
 The main problem that I wanted to solve, but perhaps got pressed on time was actually "ending the game". For now, I just show a "GAME OVER" message, but in reality I would have liked for the "Next Question" button to change to "Game Ended" and then a new screen pops up without the actual form. I also wanted to add a timer, but couldn't figure out how to reset it correctly for every question. I would probably revisit this project and make these changes.
 

@@ -4,7 +4,7 @@
 
 ## What is this?
 
-This is a trivia game that checks how well the player knows me. Every player will have to answer 8 questions and the game will keep track of the number they get right. There is no real winner or loser, but after every answer - you will get a response helping you learn more about Nada. 
+This is a trivia game that checks how well the player knows me. Every player will have to answer 8 questions and the game will keep track of the number they get right. There is no real winner or loser, but after every answer - you will get a response helping you learn more about Nada.:dancer:
 
 ## Motivation
 
@@ -59,6 +59,6 @@ The main problem that I wanted to solve, but perhaps got pressed on time was act
 At first, I was going to manually have each question a separate form in HTML to make it easy to style and use, but then realized that I should challenge myself and create one form that would be manipulated in JavaScript. It took awhile for me to be able to figure out the best way to structure my data in arrays and arrays within arrays. Once I had the structure down, it was easier to call the elements I wanted to manipulate. I also realized that I should use DIV a lot more in HTML because the way I have it currently has the entire form in one DIV which made it very hard when it came to styling. Then I had the challenge of figuring out how to minimize the number of functions that I use and the best way to call functions within functions. The shuffle function always seems difficult for me so that was also a challenge. I definitely got the hang of it towards the end. 
 
 ## Success
-It is very exciting to have a working trivia game. I'm a lot more confident now that I've worked through a lot of problems to get it to this stage!
+It is very exciting to have a working trivia game. I'm a lot more confident now that I've worked through a lot of problems to get it to this stage! :boom:
 
 

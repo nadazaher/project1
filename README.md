@@ -14,8 +14,7 @@ I am choosing to make this because I think its fun and I can actually send it to
 
 This is a trivia game that checks how well the player knows me. Every player will have to answer 8 questions and the game will keep track of the number they get right. If they answer incorrectly, game will inform user of the right answer. Since the answers are multiple choice I will make a form with radio buttons. I made one form and then created an array of arrays to manipulate the form as needed. I will check if the correct answer matches with what button the player selected and based on that I will return a relevant response and score. 
 
-
-## Phases of Completion
+## Phases of Completion/Features
 
 As a user, I want to play a fun trivia game that will test how well I know Nada and help me get to know her better. 
 1)	Player needs to see the game and its explanation (Create welcome page)
@@ -26,6 +25,31 @@ As a user, I want to play a fun trivia game that will test how well I know Nada 
 6)  Game proceeds until all 8 questions are answered (End game after all questions answered)
 7)  User refreshes if he/she wants to play again 
 
+## Code Example 
+
+//this function inputs the respective questions and answers to the next form
+    function askQuestion (index) {
+        var quiz = document.querySelector('#quiz');
+        var questions = document.querySelector('p.questions');
+        questions.innerText = array[index].question; 
+        document.getElementsByTagName('input').checked = false;
+        global_index = index
+        var shuffleAnswers = shuffle(array[index].answers);
+//  this for loop goes through every question and shuffles the order that the answers are appearing in
+        for(var i = 0; i < shuffleAnswers.length; i++) {
+            var a = document.querySelector(`#mcp-p${i+1}`);
+            var r = document.querySelector(`#mcp${i+1}`);
+            var img = document.createElement("IMG"); 
+            img.src = shuffleAnswers[i].image;
+            a.innerText = shuffleAnswers[i].text;
+            r.value = shuffleAnswers[i].text;
+            a.style.backgroundImage = "url("+shuffleAnswers[i].image+")";
+        }
+    }
+
+## How to Use?
+Feel free to fork and clone my repo so you can access and play around with the code. If you just want to play the actual game you can play it here https://nadazaher.github.io/project1/
+
 ## Unsolved Problems
 The main problem that I wanted to solve, but perhaps got pressed on time was actually "ending the game". For now, I just show a "GAME OVER" message, but in reality I would have liked for the "Next Question" button to change to "Game Ended" and then a new screen pops up without the actual form. I also wanted to add a timer, but couldn't figure out how to reset it correctly for every question. I would probably revisit this project and make these changes.
 
@@ -35,6 +59,4 @@ At first, I was going to manually have each question a separate form in HTML to 
 ## Success
 It is very exciting to have a working trivia game. I'm a lot more confident now that I've worked through a lot of problems to get it to this stage!
 
-## How to Use?
-Feel free to fork and clone my repo so you can access and play around with the code. If you just want to play the actual game you can play it here https://nadazaher.github.io/project1/
 

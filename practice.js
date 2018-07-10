@@ -1,3 +1,4 @@
+// for each question, theres another array of answers (including images) as well as the correct answer and respective messages
 var array = [
     {   "question": "What is Nada's hometown?",
         "answers":
@@ -20,7 +21,7 @@ var array = [
     }
     ],
     "messageCorrect": "Great - you're off to a good start.",
-    "messageIncorrect": "You should know that I'm from Alexandria!",
+    "messageIncorrect": "Incorrect, I actually grew up in Alexandria!",
     },
     {
         "question": "What sport did Nada play in college?",
@@ -42,8 +43,8 @@ var array = [
     "correct": true
     }
     ],
-    "messageCorrect": "Yes, I've played tennis all my life.",
-    "messageIncorrect": "No, I actually played tennis all my life."
+    "messageCorrect": "Yes, I've played tennis competitively all my life.",
+    "messageIncorrect": "Incorrect, I actually played tennis competitively all my life."
     },
     {
         "question": "What is Nada's favorite cuisine?",
@@ -65,8 +66,8 @@ var array = [
     "correct": true
     }
     ],
-    "messageCorrect": "Yes Lebanese is definitely my favorite, with Greek being a close second.",
-    "messageIncorrect": "No, actually Lebanese is my favorite, with Greek being a close second."
+    "messageCorrect": "Yes, Lebanese is definitely my favorite with Greek being a close second.",
+    "messageIncorrect": "Incorrect, even though I love all cuisines, Lebanese is my favorite with Greek being a close second."
     },
     {
         "question": "What is Nada's favorite hobby?",
@@ -89,7 +90,7 @@ var array = [
     }
     ],
     "messageCorrect": "Yes, you know me pretty well. I can play volleyball for hours.",
-    "messageIncorrect": "No, my favorite hobby is playing volleyball - preferably beach."
+    "messageIncorrect": "Incorrect, my favorite hobby is playing volleyball - preferably beach."
     },
     {
         "question": "What is Nada's favorite movie?",
@@ -110,8 +111,8 @@ var array = [
     "correct": true
     }
     ],
-    "messageCorrect": "Yes, sports movies are my favorite.",
-    "messageIncorrect": "No, my favorite type of movies are sports movies so no wonder Invictus is the answer here."
+    "messageCorrect": "Yes, sports movies are my favorite and if you haven't seen Invictus you should!",
+    "messageIncorrect": "Incorrect, my favorite movies are sports movies so no wonder Invictus is the answer here."
     },
     {
         "question": "What does Nada bake most often?",
@@ -133,8 +134,8 @@ var array = [
     "correct": true
     }
     ],
-    "messageCorrect": "Yes, my go-to is chocolate chip cookies",
-    "messageIncorrect": "No, I guess this could be tricky, but my go-to is chocolate chip cookies."
+    "messageCorrect": "Yes, my go-to is chocolate chip cookies -  you should ask me to bake some for you.",
+    "messageIncorrect": "Incorrect, I guess this could be tricky because I do like baking all of them, but my go-to is chocolate chip cookies."
     },
     {
         "question": "What is Nada\'s favorite genre of music?",
@@ -156,8 +157,8 @@ var array = [
     "correct": true
     }
     ],
-    "messageCorrect": "Yes, Latin music always puts me in a good mood and I also love dancing salsa.",
-    "messageIncorrect": "No, I actually prefer Latin music and the dancing vibe that comes with it."
+    "messageCorrect": "Yes, Latin music always puts me in a good mood - I'd happily dance salsa anyday!",
+    "messageIncorrect": "Incorrect, I actually prefer Latin music and the dancing vibe that comes with it."
     },
     {
         "question": "What is Nada\'s horoscope?",
@@ -179,12 +180,38 @@ var array = [
     "correct": true
     }
     ],
-    "messageCorrect": "Yes, I\"m impressed that you know my birthday or at least birthday month! THANK YOU FOR PLAYING NADA'S QUIZ!",
-    "messageIncorrect": "No, my birthday is actually on March 8th so Pisces it is. GAME OVER!"
+    "messageCorrect": "Yes, I\"m impressed that you know my birthday or at least birthday month!",
+    "messageIncorrect": "Incorrect, my birthday is actually on March 8th so Pisces it is. "
     },
+    {
+        "question": "Thank you for playing Nada's game. Hope you enjoyed it and got to know Nada a little better!",
+        "answers":[
+        {"text":"Score 0-2: ",
+        "image": "https://i.imgflip.com/s9vrk.jpg",
+        "correct": false
+    },
+    {"text": "Score 2-4:",
+    "image": "http://i.giphy.com/qXexawbjsqK88.gif",
+    "correct": false
+    },
+    {"text": "Score 4-6:",
+    "image": "https://media.makeameme.org/created/you-know-me-56ry18.jpg",
+    "correct": false
+    },
+    {"text": "Score 6-8:",
+    "image": "http://memeshappen.com/media/created/2018/06/Awesome-Job-.jpg",
+    "correct": true
+    }
+    ],
+    "messageCorrect": "GAME COMPLETE. Please refresh page if you'd like to play again",
+    "messageIncorrect": "GAME COMPLETE. Please refresh page if you'd like to play again"
+    }
     ];
-    
+
+// once the user clicks on the "start" button it clears the welcome page and gets the screen ready with the first question
     document.getElementById("start").addEventListener("click", both)
+
+// once the user clicks on the "Next Question" button the game checks the current user answer with the correct answer, outputs message, then shows the next question
     document.getElementById("buttonCA").addEventListener("click", function(event){
         event.preventDefault()
         getInput();
@@ -192,46 +219,50 @@ var array = [
         nextQuestion();
     })
 
-    
+//setting these global variables for future use
     let score = 0;
     let global_index;
-    
- function nextQuestion(){
-        global_index++;
-        askQuestion(global_index);
-        uncheck();
 
-        
+//this function clears everything from the welcome page to make space for the quiz
+    function titleClear(){
+        document.querySelector(".title").style.display = "none";
+        document.querySelector(".line").style.display = "none";
+        document.querySelector(".intro").style.display = "none";
+        document.querySelector(".start").style.display = "none";
+    }  
+
+//this function simply shows the previously hidden quiz/form
+    function start(){ 
+        document.getElementById("quiz").style.display = "block";
     }
-    
-    /*asks question*/
+
+//this function calls the start and titleclear functions as well as starts the game with the first question
+    function both (){
+        titleClear();
+        start();
+        askQuestion(0);
+    }
+
+//this function inputs the respective questions and answers to the next form
     function askQuestion (index) {
         var quiz = document.querySelector('#quiz');
         var questions = document.querySelector('p.questions');
         questions.innerText = array[index].question; 
         document.getElementsByTagName('input').checked = false;
         global_index = index
-    
         var shuffleAnswers = shuffle(array[index].answers);
-    
+//  this for loop goes through every question and shuffles the order that the answers are appearing in
         for(var i = 0; i < shuffleAnswers.length; i++) {
             var a = document.querySelector(`#mcp-p${i+1}`);
             var r = document.querySelector(`#mcp${i+1}`);
             var img = document.createElement("IMG"); 
             img.src = shuffleAnswers[i].image;
-
             a.innerText = shuffleAnswers[i].text;
             r.value = shuffleAnswers[i].text;
-
-
-
             a.style.backgroundImage = "url("+shuffleAnswers[i].image+")";
-            
-      
-
         }
     }
-    
+// this function shuffles the order in which the answers appear in so its more stimulating
     function shuffle(a) {
         var j, x, i;
         for (i = a.length - 1; i > 0; i--) {
@@ -243,49 +274,21 @@ var array = [
         return a;
     }
     
+// this function just makes sure that no radio buttons are not pre-selected when you start a new question
+    function uncheck() {
+        document.querySelector("#mcp1").checked = false;
+        document.querySelector("#mcp2").checked = false;
+        document.querySelector("#mcp3").checked = false;
+        document.querySelector("#mcp4").checked = false;
 
-    function checkAnswer(){
-        trueAnswer = returnCorrectAnswer();
-        userAnswer = getInput();
-        if(userAnswer === trueAnswer){
-            var messageCorrect = array[global_index].messageCorrect;
-            score ++;
-            swal({
-                title: messageCorrect,
-                text: "You got " + score + " out of 8 correct.",
-              });
-
-        }
-        else{
-
-            var messageIncorrect = array[global_index].messageIncorrect;
-            swal({
-                title: messageIncorrect,
-                text: "You got " + score + " out of 8 correct.",
-              });
-
-
-        }
     }
-    
-    function start(){ 
-        document.getElementById("quiz").style.display = "block";
+// this function calls on askQuestion and uncheck to make sure a new set of question and answers are outputted and all buttons are unchecked at the start of every screen   
+    function nextQuestion(){
+        global_index++;
+        askQuestion(global_index);
+        uncheck();
     }
-    
-    function titleClear(){
-        document.querySelector(".title").style.display = "none";
-        document.querySelector(".line").style.display = "none";
-        document.querySelector(".intro").style.display = "none";
-        document.querySelector(".start").style.display = "none";
-    }  
-    
-    function both (){
-        titleClear();
-        start();
-        askQuestion(0);
-    }
-    
-
+// this function saves the text of the user's answer depending on which radio button he/she clicked
     function getInput(){
         const clicked = document.querySelectorAll('.answer');
         
@@ -295,7 +298,7 @@ var array = [
             }
         }
     }
-    
+// this function saves the text of the correct answer for each question 
     function returnCorrectAnswer(){
         const answers = array[global_index].answers    
         for(var x = 0; x < answers.length; x++){
@@ -306,11 +309,30 @@ var array = [
         return correctAnswer;
     }
     
-
-    function uncheck() {
-        document.querySelector("#mcp1").checked = false;
-        document.querySelector("#mcp2").checked = false;
-        document.querySelector("#mcp3").checked = false;
-        document.querySelector("#mcp4").checked = false;
-
+// this function compares the user answer to the correct answer to check for correctedness and return a score increment and relevant message
+    function checkAnswer(){
+        trueAnswer = returnCorrectAnswer();
+        userAnswer = getInput();
+// this if statement is stating if user inputs the right answer what happens and if not what happens
+        if(userAnswer === trueAnswer){
+            var messageCorrect = array[global_index].messageCorrect;
+            score ++;
+            swal({
+                title: messageCorrect,
+                text: "You got " + score + " out of 8 correct.",
+              });
+        }
+        else{
+            var messageIncorrect = array[global_index].messageIncorrect;
+            swal({
+                title: messageIncorrect,
+                text: "You got " + score + " out of 8 correct.",
+              });
+        }
     }
+    
+    
+
+    
+
+   

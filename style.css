@@ -16,26 +16,6 @@ h1 {
     text-align: center;
     font-size: 50px;
 }
-
-/* h4 {
-    color: red;
-    font-size: 40px;
-    font-family: 'Allerta Stencil', sans-serif;
-
-   
-}
-#status {
-    font-family: 'Allerta Stencil', sans-serif;
-    font-size: 40px;
-    float: right;
-    margin-top: 160px;
-    margin-right: 300px;
-    height: 170px;
-    width: 170px;
-
-
-
-} */
 .button {
     background: #026D7F;
     border: none;
@@ -51,20 +31,6 @@ h1 {
     color: black;
     cursor: pointer;
 }
-/* #after_submit {
-    display: none;
-    background: #026D7F;
-    border-radius: 20px;
-    width: 100px;
-    height: 100px;
-    padding: 20px 20px;
-    font-size: 20px;
-    text-align: center;
-    margin: 0 auto; 
-    font-family: 'Arvo', serif; 
-    
-
-} */
 
 #quiz {
     width: 500px;
@@ -77,8 +43,6 @@ h1 {
     margin: 0 auto;
     display: none;
     position: relative;
-    
-
 }
 .questions {
     font-family: 'Arvo', serif; 
@@ -89,8 +53,6 @@ h1 {
     color:  #026D7F;
     text-shadow: none;
 }
-
-
 
 .intro {
     font-family: 'Arvo', serif; 
@@ -141,7 +103,6 @@ form{
     padding: 5px;
 }
 
-
 .img{
     position: relative;
     height: 300px;
@@ -152,18 +113,4 @@ form{
     margin-top: 0px;
 }
 
-/* #end {
-background: #026D7F;
-border: none;
-border-radius: 5px;
-padding: 10px;
-color: white;
-font-size: 50px;
-margin-top: 5px;
-margin: 0 auto;
-width: 200px;
-height: 100px;
-display: none;
-text-align: center;
-} */
 

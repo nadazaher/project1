@@ -5,38 +5,27 @@
     <link href = "style.css" rel="stylesheet"> 
     <link href = "https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet">
-    <link rel="tab icon" href="https://media.licdn.com/dms/image/C4D03AQGWbWiHMgMYQg/profile-displayphoto-shrink_200_200/0?e=1535587200&v=beta&t=kioMZi-swA4aHm0vnUECPuKvbvhYMAnpL2E6tHMnNXE" >
-    >
+    <link rel="tab icon" href="https://media.licdn.com/dms/image/C4D03AQGWbWiHMgMYQg/profile-displayphoto-shrink_200_200/0?e=1535587200&v=beta&t=kioMZi-swA4aHm0vnUECPuKvbvhYMAnpL2E6tHMnNXE">
 
 </head>
 <body>
     <h1 class = "title">Do you know Nada or ¿tu sabes nada?</h1>
     <hr class = "line" />
 
-    <p class = "intro"> Welcome to my 10 question quiz and the real test to how well you know me. <br> So you're either a true friend or you know 'nada' <br> Ready to find out?</p>
+    <p class = "intro"> Welcome to my short quiz and the real test to how well you know me. <br> So you're either a true friend or you know 'nada' <br> Ready to find out?</p>
     <input type = "button" class="start" id = "start" value = "START" >
 
-    <div class = extra></div>
-    <div id="status"></div>
-            
-</div>
     <form id ="quiz" name = "quiz">
         <p class ="questions"></p> 
-        <input type = "radio" name='answer' class = "answer" id="mcp1" > <div id="mcp-p1"></div> 
-        <input type = "radio" name='answer' class = "answer" id="mcp2" > <div id="mcp-p2"></div>
-        <input type = "radio" name='answer' class = "answer" id="mcp3" >  <div id="mcp-p3"></div>
-        <input type = "radio" name='answer' class = "answer" id="mcp4" > <div id="mcp-p4"></div>
-        <br><input type = "button" id = "buttonCA" class = "button" value = "Check Answer">
-        
-
+       <input type = "radio" name='answer' class = "answer" id="mcp1" ><div class='img' id="mcp-p1"></div> 
+       <input type = "radio" name='answer' class = "answer" id="mcp2" ><div class='img' id="mcp-p2"></div>
+        <input  type = "radio" name='answer' class = "answer" id="mcp3" ><div class='img' id="mcp-p3"></div>
+        <input type = "radio" name='answer' class = "answer" id="mcp4" ><div class='img' id="mcp-p4"></div>
+        <br><input type = "button" id = "buttonCA" class = "button" value = "Next Question">
     </form>
 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-    <div id = "after_submit">
-            <p id = "message"></p>
-            <p id = "score_tracker"></p> 
-            </div>
-    
             <script defer src= "practice.js" type = "text/javascript"></script>
 </html>
 </body>

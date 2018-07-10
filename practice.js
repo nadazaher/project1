@@ -14,7 +14,7 @@ var array = [
     "image": "https://www.tabularaisa.com/wp-content/uploads/2015/12/eiffel.jpg",
     "correct": false
     },
-    {"text": "Alexandria,Egypt",
+    {"text": "Alexandria, Egypt",
     "image": "https://www.planetware.com/photos-large/EGY/egypt-alexandria-corniche.jpg",
     "correct": true
     }
@@ -26,7 +26,7 @@ var array = [
         "question": "What sport did Nada play in college?",
         "answers":[
         {"text":"Soccer",
-        "image": "https://www.thenation.com/wp-content/uploads/2018/04/soccer-ball-ss-img.jpg",
+        "image": "https://thenypost.files.wordpress.com/2017/09/170918-soccer-ball-stock-image-feature-image.jpg?quality=90&strip=all&w=664&h=441&crop=1",
         "correct": false
     },
     {"text": "Volleyball",
@@ -34,11 +34,11 @@ var array = [
     "correct": false
     },
     {"text": "Squash",
-    "image": "https://vid.alarabiya.net/images/2016/12/22/eaeff1a1-c63c-4556-b584-e2bd6bca234d/eaeff1a1-c63c-4556-b584-e2bd6bca234d_16x9_788x442.jpg",
+    "image": "https://www.pdhsports.com/files/uk/imagelibrary/subcategory/squash-rackets.jpg",
     "correct": false
     },
     {"text": "Tennis",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5mAvdN5PZOXnZA3kNZjC4Gtt2uW9QnVOPMvj3WwjYaiDo64VN",
+    "image": "https://i1.wp.com/www.healthfitnessrevolution.com/wp-content/uploads/2015/04/ThinkstockPhotos-513920615.jpg?fit=725%2C483",
     "correct": true
     }
     ],
@@ -57,7 +57,7 @@ var array = [
     "correct": false
     },
     {"text": "Mexican",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGBL6NhhVp3Q8D0zad9myzWZYxAY8FTfCqmeOoTABQRvtQ9-2r0Q",
+    "image": "https://img.grouponcdn.com/deal/2AJ4Cpguh6AJMyqim8tj/9c-2048x1229/v1/c700x420.jpg",
     "correct": false
     },
     {"text": "Lebanese",
@@ -72,19 +72,19 @@ var array = [
         "question": "What is Nada's favorite hobby?",
         "answers":[
         {"text":"Watching makeup tutorials",
-        "image": "https://i.ytimg.com/vi/WZerlq1RYUQ/maxresdefault.jpg",
+        "image": "https://www.betrendsetter.com/wp-content/uploads/2015/08/Neutral-Eye-Makeup-Tutorial.jpg",
         "correct": false
     },
-    {"text": "Reading comics",
-    "image": "http://blog.modis.com/wp-content/uploads/2016/06/man-reading-comic-blog-300x214.jpg",
+    {"text": "Reading comic books",
+    "image": "https://img.grouponcdn.com/deal/2vpUNSiEmhZ731fbbVMhyN/new-700x420/v1/c700x420.jpg",
     "correct": false
     },
     {"text": "Attending concerts",
-    "image": "http://1ryzas42x65e2oosia40bgli.wpengine.netdna-cdn.com/wp-content/uploads/2016/12/concert.jpg",
+    "image": "https://buffaloriverworks.com/wp-content/uploads/2017/04/Concerts.jpg",
     "correct": false
     },
-    {"text": "Playing volleyball",
-    "image": "https://i.ytimg.com/vi/KelqRvBudYo/maxresdefault.jpg",
+    {"text": "Playing volleyball at the beach",
+    "image": "https://media.istockphoto.com/photos/friends-playing-volleybal-picture-id186010902?k=6&m=186010902&s=612x612&w=0&h=rncatukhZstzA8AGmPT-wafT0IyqbVmI1DYunNpBWVM=",
     "correct": true
     }
     ],
@@ -99,14 +99,14 @@ var array = [
         "correct": false
     },
     {"text": "The Proposal",
-    "image": "https://secure-media.hotstar.com/r1/thumbs/PCTV/19/1660010119/PCTV-1660010119-hcdl.jpg",
+    "image": "https://static01.nyt.com/images/2009/06/19/movies/proposal_600.jpg",
     "correct": false
     },
     {"text": "Titanic",
-    "image": "https://usercontent1.hubstatic.com/13810550_f520.jpg",
+    "image": "https://www.irishcentral.com/uploads/article/123121/cropped_titanic-rose-jack-anniversary.jpg?t=1513761089",
     },
     {"text": "Invictus",
-    "image": "https://resizing.flixster.com/kVNrR30aHtSFkj0jUr4_Rq5XMbY=/300x300/v1.bTsxMTIzOTQ3MjtqOzE3ODE1OzEyMDA7MTA1MDsxNDAw",
+    "image": "http://jaysonfeltner.com/wp-content/uploads/2012/04/Invictus.jpg",
     "correct": true
     }
     ],
@@ -114,10 +114,10 @@ var array = [
     "messageIncorrect": "No, my favorite type of movies are sports movies so no wonder Invictus is the answer here."
     },
     {
-        "question": "What does Nada bake best?",
+        "question": "What does Nada bake most often?",
         "answers":[
         {"text":"Carrot Cake",
-        "image": "https://www.inspiredtaste.net/wp-content/uploads/2017/07/Carrot-Cake-Recipe-4-1200.jpg",
+        "image": "https://images-gmi-pmc.edge-generalmills.com/59fe25ea-1f27-4ceb-adfb-66537f116d46.jpg",
         "correct": false
     },
     {"text": "Baklava",
@@ -125,7 +125,7 @@ var array = [
     "correct": false
     },
     {"text": "Cupckaes",
-    "image": "https://www.justataste.com/wp-content/uploads/2016/02/vanilla-bean-cupcakes-buttercream-frosting-recipe.jpg",
+    "image": "https://www.fifteenspatulas.com/wp-content/uploads/2011/10/Chocolate-Peanut-Butter-Cupcakes-Fifteen-Spatulas-12-640x427.jpg",
     "correct": false
     },
     {"text": "Chocolate Chip Cookies",
@@ -137,14 +137,14 @@ var array = [
     "messageIncorrect": "No, I guess this could be tricky, but my go-to is chocolate chip cookies."
     },
     {
-        "question": "What is Nada\"s favorite music genre?",
+        "question": "What is Nada\'s favorite genre of music?",
         "answers":[
         {"text":"Hip-Hop",
-        "image": "http://www.iamtheindustry.com/wp-content/uploads/2017/07/6361500301858884612038540517_Hip-Hop.jpg",
+        "image": "https://www.musicinafrica.net/sites/default/files/styles/article_slider_large/public/images/article/201604/zone-fam-2.jpg?itok=Uhz1c71F",
         "correct": false
     },
     {"text": "Classical",
-    "image": "http://mediad.publicbroadcasting.net/p/kunr/files/styles/x_large/public/201408/Classical-Music-Wallpaper.jpg",
+    "image": "https://cdn.trendhunterstatic.com/thumbs/classical-music.jpeg",
     "correct": false
     },
     {"text": "Reggae",
@@ -160,28 +160,28 @@ var array = [
     "messageIncorrect": "No, I actually prefer Latin music and the dancing vibe that comes with it."
     },
     {
-        "question": "What is Nada\"s favorite snack?",
+        "question": "What is Nada\'s horoscope?",
         "answers":[
-        {"text":"Kit Kat",
-        "image": "https://cms.qz.com/wp-content/uploads/2017/05/kitkat.jpg?quality=80&strip=all&w=4000",
+        {"text":"Leo (July 23 - Aug 22)",
+        "image": "https://hips.hearstapps.com/mac.h-cdn.co/assets/15/53/768x384/landscape-1451583330-mcx-astro1-leo.gif?resize=768:*",
         "correct": false
     },
-    {"text": "Oreos",
-    "image": "http://static1.uk.businessinsider.com/image/54d502e0dd0895821b8b4641-480/oreos.jpg",
+    {"text": "Taurus (April 20 - May 20)",
+    "image": "https://media.women.com/images/images/000/080/864/large/gallery-1451582023-mcx-astro1-taurus.gif?1490730519",
     "correct": false
     },
-    {"text": "Gummy Bears",
-    "image": "https://images.wisegeek.com/gummy-bears.jpg",
+    {"text": "Gemini (May 21 - June 20)",
+    "image": "http://thesociallit.com/wp-content/uploads/2017/05/gallery-1451582468-mcx-astro1-gemini.gif",
     "correct": false
     },
-    {"text": "Sweet Potato Chips",
-    "image": "http://www.terrachips.com/wp-content/uploads/2017/06/sweet-potato-chips.png",
+    {"text": "Pisces (Feb 19 - Mar 20)",
+    "image": "https://media.giphy.com/media/S9pRt4XWKnBQI/giphy.gif",
     "correct": true
     }
     ],
-    "messageCorrect": "Yes, I\"m impressed since I like all these snacks.",
-    "messageIncorrect": "No, sorry this was a tough one since I like all 4, but Sweet Potato Chips are my favorite."
-    }
+    "messageCorrect": "Yes, I\"m impressed that you know my birthday or at least birthday month! THANK YOU FOR PLAYING NADA'S QUIZ!",
+    "messageIncorrect": "No, my birthday is actually on March 8th so Pisces it is. GAME OVER!"
+    },
     ];
     
     document.getElementById("start").addEventListener("click", both)
@@ -191,15 +191,17 @@ var array = [
         checkAnswer();
         nextQuestion();
     })
+
     
     let score = 0;
     let global_index;
     
-    function nextQuestion(){
+ function nextQuestion(){
         global_index++;
         askQuestion(global_index);
-        countDown(10, "status");
-        document.getElementById("after_submit").style.display = "none";
+        uncheck();
+
+        
     }
     
     /*asks question*/
@@ -207,19 +209,26 @@ var array = [
         var quiz = document.querySelector('#quiz');
         var questions = document.querySelector('p.questions');
         questions.innerText = array[index].question; 
-    
-        global_index = index //index
+        document.getElementsByTagName('input').checked = false;
+        global_index = index
     
         var shuffleAnswers = shuffle(array[index].answers);
     
         for(var i = 0; i < shuffleAnswers.length; i++) {
             var a = document.querySelector(`#mcp-p${i+1}`);
             var r = document.querySelector(`#mcp${i+1}`);
-            var img = document.createElement("IMG");
+            var img = document.createElement("IMG"); 
             img.src = shuffleAnswers[i].image;
+
             a.innerText = shuffleAnswers[i].text;
-            r.value = a.innerText;
-            a.appendChild(img);
+            r.value = shuffleAnswers[i].text;
+
+
+
+            a.style.backgroundImage = "url("+shuffleAnswers[i].image+")";
+            
+      
+
         }
     }
     
@@ -234,69 +243,54 @@ var array = [
         return a;
     }
     
+
     function checkAnswer(){
         trueAnswer = returnCorrectAnswer();
         userAnswer = getInput();
         if(userAnswer === trueAnswer){
-            alert(array[global_index].messageCorrect);
+            var messageCorrect = array[global_index].messageCorrect;
             score ++;
+            swal({
+                title: messageCorrect,
+                text: "You got " + score + " out of 8 correct.",
+              });
+
         }
         else{
-            alert(array[global_index].messageIncorrect);
+
+            var messageIncorrect = array[global_index].messageIncorrect;
+            swal({
+                title: messageIncorrect,
+                text: "You got " + score + " out of 8 correct.",
+              });
+
+
         }
-        
-        // document.getElementById("message").innerHTML = messages[global_index];
-        document.getElementById("after_submit").style.display = "block";
-        document.getElementById("score_tracker").innerHTML = "You got " + score + " correct.";
     }
     
     function start(){ 
         document.getElementById("quiz").style.display = "block";
-        document.querySelector("#after_submit").style.display = "none";
     }
     
     function titleClear(){
-        // console.log("how are you")
         document.querySelector(".title").style.display = "none";
         document.querySelector(".line").style.display = "none";
         document.querySelector(".intro").style.display = "none";
         document.querySelector(".start").style.display = "none";
-        document.querySelector(".extra").style.display = "block";
     }  
     
     function both (){
         titleClear();
         start();
         askQuestion(0);
-        // getInput();
-        // countDown(10);
     }
     
-    // function countDown(secs) {
-    //     console.log("timer started")
-    //     var element = document.getElementById("status");
-    //     setTimeout(() => {
-    //         element.innerHTML = secs + " secs";
-    
-    //         if(secs < 1) {
-    //             console.log('clear')
-    //             element.innerHTML = '<h4>Time\'s Up!</h4>';
-    //         }
-    //         secs--;
-    //     }, 1000)
-    // }
-    
-    // function runGame (){
-    //     for (x = 0; x < question.length; x+=1) {
-    //         askQuestion(x);
-    //     }
-    // }
+
     function getInput(){
         const clicked = document.querySelectorAll('.answer');
         
         for(var x = 0; x < clicked.length; x++){
             if(clicked[x].checked){
-                // console.log(clicked[x].value);
                 return clicked[x].value;
             }
         }
@@ -309,7 +303,14 @@ var array = [
                 correctAnswer = answers[x].text;
             }
         }
-        // console.log('Correct answer: ', correctAnswer)
         return correctAnswer;
     }
     
+
+    function uncheck() {
+        document.querySelector("#mcp1").checked = false;
+        document.querySelector("#mcp2").checked = false;
+        document.querySelector("#mcp3").checked = false;
+        document.querySelector("#mcp4").checked = false;
+
+    }

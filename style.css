@@ -14,9 +14,10 @@ body {
 h1 {
     font-family: 'Arvo', serif;
     text-align: center;
+    font-size: 50px;
 }
 
-h4 {
+/* h4 {
     color: red;
     font-size: 40px;
     font-family: 'Allerta Stencil', sans-serif;
@@ -34,9 +35,9 @@ h4 {
 
 
 
-}
+} */
 .button {
-    background: #0EB8B5;
+    background: #026D7F;
     border: none;
     border-radius: 5px;
     padding: 10px;
@@ -46,13 +47,13 @@ h4 {
 }
 .button:hover {
     background: white;
-    border: 1px solid #0EB8B5;
+    border: 1px solid #026D7F;
     color: black;
     cursor: pointer;
 }
-#after_submit {
+/* #after_submit {
     display: none;
-    background: #0EB8B5;
+    background: #026D7F;
     border-radius: 20px;
     width: 100px;
     height: 100px;
@@ -63,63 +64,106 @@ h4 {
     font-family: 'Arvo', serif; 
     
 
-}
+} */
 
 #quiz {
-    padding: 10px 20px 10px 20px;
     width: 500px;
     height: 270px;
-    border-radius: 20px;
-    float: block;
-    font-size: 20px;
+    border-radius: 10px;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+    color: white;
     margin: 0 auto;
-    margin-top: 15px;
     display: none;
-
-}
-.answer {
-    text-overflow:ellipsis;
-    display: inline-block;
+    position: relative;
     
+
 }
 .questions {
     font-family: 'Arvo', serif; 
-    font-size: 28px;
-
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 40px;
+    color:  #026D7F;
+    text-shadow: none;
 }
+
 
 
 .intro {
     font-family: 'Arvo', serif; 
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
 }
 
 #start {
-background: #0EB8B5;
+background: #026D7F;
 border: none;
 border-radius: 5px;
 padding: 10px;
 color: white;
-font-size: 40px;
+font-size: 50px;
 margin-top: 5px;
 margin: 0 auto;
 width: 200px;
 height: 100px;
 display: block;
+text-align: center;
 }
 
 #buttonCA {
-float: left;
+    background: #026D7F;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 25px;
+    margin-top: 5px;
+    margin: 0 auto;
+    width: 200px;
+    height: 100px;
+    display: block;
+    text-align: center;
+    margin-left: 170px;
+
+    }
+
+.answer{
+    margin: 10px;
+    color: black;  
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
 }
 
 
-
-.extra {
-    display:none;
+.img{
+    position: relative;
+    height: 300px;
+    left: 30px;
+    border-radius: 30px;
+    box-shadow: 1px 4px 1px 1px grey;
+    margin: 0px; 
+    margin-top: 0px;
 }
 
-.img {
-    height: 50px;
-    width: 50px;
-}
+/* #end {
+background: #026D7F;
+border: none;
+border-radius: 5px;
+padding: 10px;
+color: white;
+font-size: 50px;
+margin-top: 5px;
+margin: 0 auto;
+width: 200px;
+height: 100px;
+display: none;
+text-align: center;
+} */
+

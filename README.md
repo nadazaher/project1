@@ -4,7 +4,7 @@
 
 ## What is this?
 
-This is a trivia game that checks how well the player knows me. Every player will have to answer 8 questions and the game will keep track of the number they get right. There is no real winner or loser, but after every answer - you will get a response helping you learn more about Nada.:dancer:
+This is a trivia game that checks how well the player knows me. Every player will have to answer 8 questions and the game will keep track of the number they get right. There is no real winner or loser, but after every answer - you will get a response helping you learn more about Nada. :dancer:
 
 ## Motivation
 

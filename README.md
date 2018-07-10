@@ -27,6 +27,7 @@ As a user, I want to play a fun trivia game that will test how well I know Nada 
 
 ## Code Example 
 
+```javascript
 //this function inputs the respective questions and answers to the next form
     function askQuestion (index) {
         var quiz = document.querySelector('#quiz');
@@ -46,6 +47,7 @@ As a user, I want to play a fun trivia game that will test how well I know Nada 
             a.style.backgroundImage = "url("+shuffleAnswers[i].image+")";
         }
     }
+```
 
 ## How to Use?
 Feel free to fork and clone my repo so you can access and play around with the code. If you just want to play the actual game you can play it here https://nadazaher.github.io/project1/

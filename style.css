@@ -118,3 +118,8 @@ float: left;
 .extra {
     display:none;
 }
+
+.img {
+    height: 50px;
+    width: 50px;
+}

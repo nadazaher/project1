@@ -2,13 +2,13 @@
 
 # Do you know Nada or ¿sabes nada?
 
-## How does this game work?
+## What is this?
 
-This is a trivia game that checks how well the player knows me. I am choosing to make this because I think its fun and I can actually send it to my friends and family to see how they do! Every player will have to answer 8 questions and the game will keep track of the number they get right. There is no real winner or loser, but after every answer - you will get a response helping you learn more about Nada. 
+This is a trivia game that checks how well the player knows me. Every player will have to answer 8 questions and the game will keep track of the number they get right. There is no real winner or loser, but after every answer - you will get a response helping you learn more about Nada. 
 
-## Wireframe
+## Motivation
 
-[]/images/initial wireframses.jpeg (also available as a .bmpr attachment)
+I am choosing to make this because I think its fun and I can actually send it to my friends and family to see how they do! I can really test who knows me well and they can get to know me better after the quiz. Its a good about me for people I newly meet as well like my GA classmates. I can also eventually link this to my portfolio!
 
 ## Initial thoughts on game structure
 
@@ -34,4 +34,7 @@ At first, I was going to manually have each question a separate form in HTML to 
 
 ## Success
 It is very exciting to have a working trivia game. I'm a lot more confident now that I've worked through a lot of problems to get it to this stage!
+
+## How to Use?
+Feel free to fork and clone my repo so you can access and play around with the code. If you just want to play the actual game you can play it here https://nadazaher.github.io/project1/
 

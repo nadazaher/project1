@@ -1,4 +1,3 @@
-*** Nada Zaher / July 10, 2018 ***
 ![Screenshot here](https://github.com/nadazaher/project1/blob/master/Screen%20Shot%202018-07-10%20at%2011.16.54%20AM.png)
 
 # Do you know Nada or ¿sabes nada?
